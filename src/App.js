@@ -8,11 +8,13 @@ import Order from './pages/Order';
 import Saved from './pages/Saved';
 import Setting from './pages/Setting';
 import Users from './pages/Users';
+import Sidebar from './components/Sidebar';
 
 
 function App() {
   return (
     <div className="App">
+      <Sidebar>
       <Router>
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -26,6 +28,7 @@ function App() {
 
         </Routes>
       </Router>
+      </Sidebar>
     </div>
   );
 }
